@@ -1,0 +1,8 @@
+{
+  "name": "おみこしダッシュ！ (Omikoshi Dash!)",
+  "description": "A cooperative racing game where two players generate a unique 'omikoshi' (portable shrine) and race to the goal using their smartphone's motion and voice. This app brings the energy of the traditional Hakata Gion Yamakasa festival to everyone.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

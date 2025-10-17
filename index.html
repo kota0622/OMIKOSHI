@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おみこしダッシュ！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'mochiy': ['"Mochiy Pop One"', 'sans-serif'],
+                        'noto': ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    keyframes: {
+                        shake: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(-1deg)' },
+                            '50%': { transform: 'translateY(-10px) rotate(1deg)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'fade-in-out': {
+                            '0%, 100%': { opacity: '0', transform: 'scale(0.8)' },
+                            '50%': { opacity: '1', transform: 'scale(1.1)' },
+                        },
+                         'slide-in': {
+                            '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        'zoom-in': {
+                           '0%': { transform: 'scale(0.5)', opacity: '0' },
+                           '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                        glow: {
+                            '0%, 100%': { filter: 'drop-shadow(0 0 5px rgba(255, 255, 0, 0.7))' },
+                            '50%': { filter: 'drop-shadow(0 0 15px rgba(255, 255, 0, 1))' },
+                        }
+                    },
+                    animation: {
+                        shake: 'shake 1s ease-in-out infinite',
+                        float: 'float 3s ease-in-out infinite',
+                        'fade-in-out': 'fade-in-out 2.5s ease-in-out infinite',
+                        'slide-in': 'slide-in 0.5s ease-out forwards',
+                        'zoom-in': 'zoom-in 0.4s ease-out forwards',
+                        glow: 'glow 1.5s ease-in-out infinite',
+                    },
+                },
+            },
+        };
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+</head>
+<body class="bg-orange-50 text-gray-800 font-noto">
+    <div id="root"></div>
+    <!-- Replace this src with your actual BGM file -->
+    <audio id="race-bgm" loop src="https://storage.googleapis.com/sfr-v0-prod-assets/static/sounds/mixkit-japanese-festival-ambience-2392.wav"></audio>
+</body>
+</html>
