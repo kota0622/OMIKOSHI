@@ -23,7 +23,10 @@ const GoalScreen: React.FC = () => {
     };
 
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-center bg-cover bg-center overflow-hidden" style={{backgroundImage: "url('https://picsum.photos/seed/goal-shrine/1920/1080') /* Replace with your goal screen background */"}}>
+        // ▼▼▼ 背景画像の入れ替え ▼▼▼
+        // ↓ここの "url('...')" を、使いたい背景画像のパスに差し替えてください。
+        <div className="w-full h-screen flex flex-col items-center justify-center bg-cover bg-center overflow-hidden" style={{backgroundImage: "url('https://picsum.photos/seed/goal-shrine/1920/1080')"}}>
+        {/* ▲▲▲ 背景画像の入れ替え ▲▲▲ */}
              <div className="absolute inset-0 bg-black/30"></div>
              
              {[...Array(50)].map((_, i) => (

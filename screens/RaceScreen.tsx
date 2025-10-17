@@ -141,12 +141,15 @@ const RaceScreen: React.FC = () => {
 
     return (
         <div className="w-full h-screen overflow-hidden relative bg-blue-300">
+            {/* ▼▼▼ 背景画像の入れ替え ▼▼▼ */}
+            {/* ↓ここの "url('...')" を、使いたいスクロール背景画像のパスに差し替えてください。横長の画像が推奨です。 */}
             <div className="absolute inset-0 bg-repeat-x" style={{ 
                 backgroundImage: "url('https://picsum.photos/seed/race-scroll/2000/1080')", 
                 backgroundSize: 'auto 100%',
                 width: '300%',
                 transform: `translateX(${backgroundPosition}px)`,
             }}></div>
+            {/* ▲▲▲ 背景画像の入れ替え ▲▲▲ */}
 
             <div className="absolute inset-0 flex items-center justify-center">
                 <span className="font-mochiy text-9xl text-white opacity-0 animate-fade-in-out drop-shadow-lg" style={{ animationDelay: '0s', textShadow: '3px 3px 0 #000' }}>わっしょい！</span>

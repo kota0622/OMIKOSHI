@@ -11,7 +11,10 @@ const StartScreen: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center p-8 bg-cover bg-center" style={{backgroundImage: "url('https://picsum.photos/seed/japan-pattern/1920/1080') /* Replace with your cool Japanese-style background */"}}>
+    // ▼▼▼ 背景画像の入れ替え ▼▼▼
+    // ↓ここの "url('...')" を、使いたい背景画像のパスに差し替えてください。
+    <div className="w-full h-screen flex flex-col items-center justify-center p-8 bg-cover bg-center" style={{backgroundImage: "url('https://picsum.photos/seed/japan-pattern/1920/1080')"}}>
+    {/* ▲▲▲ 背景画像の入れ替え ▲▲▲ */}
         <div className="bg-white bg-opacity-80 p-10 rounded-3xl shadow-2xl text-center">
             <h1 className="font-mochiy text-6xl md:text-9xl text-red-600 drop-shadow-lg animate-float" style={{textShadow: '4px 4px 0 #fff, 8px 8px 0 #ddd'}}>
                 おみこしダッシュ！

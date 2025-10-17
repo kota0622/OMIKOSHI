@@ -3,9 +3,12 @@ import { GameDispatchContext } from '../context/GameContext';
 import { Screen } from '../types';
 import { STORY_DIALOGUE } from '../constants';
 
-// Replace src with your character images
+// ▼▼▼ キャラクター画像の入れ替え ▼▼▼
+// ↓ここのsrcを、やまかさくんの画像パスに差し替えてください。
 const YamakasaKun = () => <img src="https://via.placeholder.com/300x450.png?text=Yamakasa-kun" alt="Yamakasa-kun" className="h-96 w-auto object-contain drop-shadow-lg" />;
+// ↓ここのsrcを、はなちゃんの画像パスに差し替えてください。
 const Hana = () => <img src="https://via.placeholder.com/300x450.png?text=Hana" alt="Hana" className="h-96 w-auto object-contain drop-shadow-lg" />;
+// ▲▲▲ キャラクター画像の入れ替え ▲▲▲
 
 
 const StoryScreen: React.FC = () => {
@@ -35,7 +38,10 @@ const StoryScreen: React.FC = () => {
     const currentDialogue = STORY_DIALOGUE[dialogueIndex];
 
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-end p-8 bg-cover bg-center" style={{backgroundImage: "url('https://picsum.photos/seed/hakata-night/1920/1080') /* Replace with your story background */"}}>
+        // ▼▼▼ 背景画像の入れ替え ▼▼▼
+        // ↓ここの "url('...')" を、使いたい背景画像のパスに差し替えてください。
+        <div className="w-full h-screen flex flex-col items-center justify-end p-8 bg-cover bg-center" style={{backgroundImage: "url('https://picsum.photos/seed/hakata-night/1920/1080')"}}>
+        {/* ▲▲▲ 背景画像の入れ替え ▲▲▲ */}
              <div className="flex justify-between w-full max-w-6xl items-end px-4 flex-grow">
                 <div className={`transition-all duration-500 ${currentDialogue.speaker === 'はな' ? 'scale-100 opacity-100' : 'scale-90 opacity-60'}`}>
                     <Hana />
