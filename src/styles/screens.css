@@ -1,0 +1,63 @@
+.goal-screen {
+    background-image: url('https://picsum.photos/seed/goal-shrine/1920/1080');
+}
+
+.rank-text {
+    text-shadow: 2px 2px 0 #fff;
+}
+
+.race-background {
+    background-image: url('path/to/your/background.jpg');
+}
+
+.cheer-text-large {
+    text-shadow: 3px 3px 0 #000;
+}
+
+.cheer-text-yellow {
+    text-shadow: 3px 3px 0 #000;
+}
+
+.progress-bar {
+    width: var(--progress-width);
+}
+
+.omikoshi-position {
+    left: var(--omikoshi-position);
+}
+
+.power-gauge-text {
+    text-shadow: 2px 2px 0 #000;
+}
+
+.power-gauge {
+    width: var(--power-gauge-width);
+}
+
+.tilt-event-title {
+    text-shadow: 5px 5px 0 #000;
+}
+
+.tilt-event-subtitle {
+    text-shadow: 3px 3px 0 #000;
+}
+
+.power-up-title {
+    text-shadow: 5px 5px 0 #c00;
+}
+
+.power-up-subtitle {
+    text-shadow: 3px 3px 0 #c00;
+}
+
+.story-screen {
+    background-image: url('https://picsum.photos/seed/hakata-night/1920/1080');
+}
+
+.start-screen {
+    background-image: url('https://picsum.photos/seed/japan-pattern/1920/1080');
+}
+
+.game-title {
+    text-shadow: 4px 4px 0 #fff, 8px 8px 0 #ddd;
+}

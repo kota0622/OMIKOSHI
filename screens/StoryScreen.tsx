@@ -5,9 +5,9 @@ import { STORY_DIALOGUE } from '../constants';
 
 // ▼▼▼ キャラクター画像の入れ替え ▼▼▼
 // ↓ここのsrcを、やまかさくんの画像パスに差し替えてください。
-const YamakasaKun = () => <img src="https://via.placeholder.com/300x450.png?text=Yamakasa-kun" alt="Yamakasa-kun" className="h-96 w-auto object-contain drop-shadow-lg" />;
+const YamakasaKun = () => <img src="/public/image/boy.png" alt="Yamakasa-kun" className="h-96 w-auto object-contain drop-shadow-lg" />;
 // ↓ここのsrcを、はなちゃんの画像パスに差し替えてください。
-const Hana = () => <img src="https://via.placeholder.com/300x450.png?text=Hana" alt="Hana" className="h-96 w-auto object-contain drop-shadow-lg" />;
+const Hana = () => <img src="/public/image/cat.png" alt="Hana" className="h-96 w-auto object-contain drop-shadow-lg" />;
 // ▲▲▲ キャラクター画像の入れ替え ▲▲▲
 
 

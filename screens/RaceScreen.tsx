@@ -144,7 +144,7 @@ const RaceScreen: React.FC = () => {
             {/* ▼▼▼ 背景画像の入れ替え ▼▼▼ */}
             {/* ↓ここの "url('...')" を、使いたいスクロール背景画像のパスに差し替えてください。横長の画像が推奨です。 */}
             <div className="absolute inset-0 bg-repeat-x" style={{ 
-                backgroundImage: "url('https://picsum.photos/seed/race-scroll/2000/1080')", 
+                backgroundImage: "url('./image/fukuoka.png')", 
                 backgroundSize: 'auto 100%',
                 width: '300%',
                 transform: `translateX(${backgroundPosition}px)`,
