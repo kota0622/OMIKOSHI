@@ -27,7 +27,7 @@
                             '0%, 100%': { opacity: '0', transform: 'scale(0.8)' },
                             '50%': { opacity: '1', transform: 'scale(1.1)' },
                         },
-                         'slide-in': {
+                        'slide-in': {
                             '0%': { transform: 'translateX(-100%)', opacity: '0' },
                             '100%': { transform: 'translateX(0)', opacity: '1' },
                         },
@@ -52,23 +52,25 @@
             },
         };
     </script>
-<script async src="https://ga.jspm.io/npm:es-module-shims@1.8.0/dist/es-module-shims.js"></script>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
-  }
-}
-</script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+      }
+    }
+    </script>
 </head>
 <body class="bg-orange-50 text-gray-800 font-noto">
     <div id="root"></div>
-    {/* ▼▼▼ BGM素材の入れ替え ▼▼▼ */}
-    {/* ↓ここのsrcを、使いたいBGMファイルのパスに差し替えてください。 */}
+
+    <!-- ▼▼▼ BGM素材の入れ替え ▼▼▼ -->
+    <!-- ↓ここのsrcを、使いたいBGMファイルのパスに差し替えてください。 -->
     <audio id="race-bgm" loop src="https://storage.googleapis.com/sfr-v0-prod-assets/static/sounds/mixkit-japanese-festival-ambience-2392.wav"></audio>
-    {/* ▲▲▲ BGM素材の入れ替え ▲▲▲ */}
+    <!-- ▲▲▲ BGM素材の入れ替え ▲▲▲ -->
+
 </body>
 </html>
